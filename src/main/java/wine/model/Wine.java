@@ -3,10 +3,12 @@ package wine.model;
 public class Wine {
 
   private final String name;
-  private final Long volume;
+  private final String kind;
+  private final Double volume;
 
-  public Wine(String name, Long volume) {
+  public Wine(String name, String kind, Double volume) {
     this.name = name;
+    this.kind = kind;
     this.volume = volume;
   }
 
@@ -14,7 +16,11 @@ public class Wine {
     return name;
   }
 
-  public Long getVolume() {
+  public String getKind() {
+    return kind;
+  }
+
+  public Double getVolume() {
     return volume;
   }
 }
